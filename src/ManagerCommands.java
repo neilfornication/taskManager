@@ -30,6 +30,9 @@ public class ManagerCommands {
             String taskNameInput = scanInput.nextLine();
             showTask(this.file, taskNameInput);
         }
+        else if(command.equals("exit")){
+            return;
+        }
         else{
             System.out.println("Введена некорректная команда, повторите ввод");
             Scanner scan = new Scanner(System.in);
@@ -51,6 +54,7 @@ public class ManagerCommands {
         String newTaskDescription = scanner.nextLine();
         task.setDescription(newTaskDescription);
         writer.write(task.getDescription() + "\n");
+        System.out.println("Таск " + newTaskName + "сохранен");
         writer.close();
     }
     //
