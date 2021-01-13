@@ -5,6 +5,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TaskManager/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskManager/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TaskManager/ManagerCommands.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskManager/ManagerCommands.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ManagerCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManagerCommands.java" afterDir="false" />
     </list>
@@ -75,7 +76,7 @@
       <workItem from="1610221494261" duration="880000" />
       <workItem from="1610395614772" duration="8507000" />
       <workItem from="1610454038851" duration="8565000" />
-      <workItem from="1610557231272" duration="1100000" />
+      <workItem from="1610557231272" duration="1431000" />
     </task>
     <servers />
   </component>

@@ -31,7 +31,7 @@ public class ManagerCommands {
             showTask(this.file, taskNameInput);
         }
         else if(command.equals("exit")){
-            return;
+            System.out.println("До свидания");
         }
         else{
             System.out.println("Введена некорректная команда, повторите ввод");
