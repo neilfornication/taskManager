@@ -33,6 +33,9 @@ public class ManagerCommands {
         else if(command.equals("exit")){
             System.out.println("До свидания");
         }
+        else if(command.equals("tasks")){
+            showAllTasks(this.file);
+        }
         else{
             System.out.println("Введена некорректная команда, повторите ввод");
             Scanner scan = new Scanner(System.in);
@@ -65,16 +68,28 @@ public class ManagerCommands {
         String taskNameInput = scanInput.nextLine();
         Task task = new Task();
         String oldTaskDesc = task.taskSearch(file, taskNameInput);
-        task.setNewTaskData(oldTaskDesc, taskNameInput, task);
-        task.putNewTaskDataInFile(file, taskNameInput, oldTaskDesc, task);
+        if(!oldTaskDesc.equals("null")){
+            task.setNewTaskData(oldTaskDesc, taskNameInput, task);
+            task.putNewTaskDataInFile(file, taskNameInput, oldTaskDesc, task);
+        }
+        else{
+            System.out.println("Таск с введенным именем не найден");
+        }
+
     }
 
 
     public void deleteTask(File file, String taskNameInput) throws IOException {
         Task task = new Task();
         String oldTaskDesc = task.taskSearch(file, taskNameInput);
-        task.deleteTaskFromFile(file, taskNameInput, oldTaskDesc);
-        System.out.println("Таск " + taskNameInput + " удален");
+        if(!oldTaskDesc.equals("null")) {
+            task.deleteTaskFromFile(file, taskNameInput, oldTaskDesc);
+            System.out.println("Таск " + taskNameInput + " удален");
+        }
+        else{
+            System.out.println("Таск с введенным именем не найден");
+        }
+
     }
 
     public void showTask(File file, String taskNameInput) throws FileNotFoundException {
@@ -85,6 +100,23 @@ public class ManagerCommands {
         }
         else {
             System.out.println(taskNameInput + "\n" + oldTaskDesc);
+        }
+    }
+
+    public void showAllTasks(File file) throws FileNotFoundException {
+        Task task = new Task();
+        String taskNameLine = "";
+        int counter = 1;
+        Scanner fileScanner = new Scanner(file);
+        while(fileScanner.hasNextLine()){
+            if(counter % 2 == 1) {
+                taskNameLine = fileScanner.nextLine();
+                System.out.println(taskNameLine);
+            }
+            else{
+                taskNameLine = fileScanner.nextLine();
+            }
+            counter += 1;
         }
     }
 }

@@ -57,9 +57,6 @@ public class Task {
             task.setDescription(newTaskDesc);
             System.out.println("Новый таск " + "\"" + newTaskName + "\" сохранен");
         }
-        else {
-            System.out.println("Таск с введенным именем не найден");
-        }
     }
 
     public void putNewTaskDataInFile(File file, String taskNameInput, String oldTaskDesc, Task task) throws IOException {
@@ -87,7 +84,7 @@ public class Task {
         String newFileInString = "";
         int frontIndex = fileInString.indexOf(taskNameInput);
         int endIndex = fileInString.indexOf(oldTaskDesc) + oldTaskDesc.length();
-        newFileInString = fileInString.substring(0, frontIndex) + fileInString.substring(endIndex);
+        newFileInString = fileInString.substring(0, frontIndex) + fileInString.substring(endIndex + 1);
         FileWriter writer = new FileWriter(file, false);
         writer.write(newFileInString);
         newFileScanner.close();

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5243bc1-dabc-4d80-9faa-e61dba0c6225" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TaskManager/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskManager/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TaskManager/ManagerCommands.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskManager/ManagerCommands.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TaskManager/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TaskManager/Task.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ManagerCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManagerCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,22 +75,67 @@
       <workItem from="1610221494261" duration="880000" />
       <workItem from="1610395614772" duration="8507000" />
       <workItem from="1610454038851" duration="8565000" />
-      <workItem from="1610557231272" duration="1431000" />
+      <workItem from="1610557231272" duration="2462000" />
+      <workItem from="1610626731017" duration="745000" />
+      <workItem from="1610653687238" duration="2197000" />
     </task>
+    <task id="LOCAL-00001" summary="changed act method">
+      <created>1610558926566</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610558926566</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changed act method" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed act method" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Task.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TaskManager$Main.ic" NAME="Main Coverage Results" MODIFIED="1610654360319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
