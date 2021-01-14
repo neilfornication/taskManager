@@ -9,6 +9,8 @@ public class ManagerCommands {
     private String command = sc.nextLine();
     private String pathName = "C:\\Users\\yoshi\\Desktop\\123.txt";
     File file = new File(pathName);
+    private String[] commands = new String[] {"create", "edit", "delete", "show task", "tasks", "help", "exit"};
+
 
 
     public void acts(String command) throws IOException {
@@ -35,6 +37,9 @@ public class ManagerCommands {
         }
         else if(command.equals("tasks")){
             showAllTasks(this.file);
+        }
+        else if(command.equals("help")){
+            showCommands();
         }
         else{
             System.out.println("Введена некорректная команда, повторите ввод");
@@ -117,6 +122,12 @@ public class ManagerCommands {
                 taskNameLine = fileScanner.nextLine();
             }
             counter += 1;
+        }
+    }
+
+    public void showCommands(){
+        for(int i = 0; i < commands.length; i++){
+            System.out.println(commands[i]);
         }
     }
 }
