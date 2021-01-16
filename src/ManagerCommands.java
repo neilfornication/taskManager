@@ -21,19 +21,19 @@ public class ManagerCommands {
             editTask(this.file);
         }
         else if(command.equals("delete")) {
-            System.out.println("Введите имя таска, который хотите удалить");
+            System.out.println("Please enter the task name you want to delete");
             Scanner scanInput = new Scanner(System.in);
             String taskNameInput = scanInput.nextLine();
             deleteTask(this.file, taskNameInput);
         }
         else if(command.equals("show task")) {
-            System.out.println("Введите имя таска, который хотите просмотреть");
+            System.out.println("Please enter the task name to show");
             Scanner scanInput = new Scanner(System.in);
             String taskNameInput = scanInput.nextLine();
             showTask(this.file, taskNameInput);
         }
         else if(command.equals("exit")){
-            System.out.println("До свидания");
+            System.out.println("Bye");
         }
         else if(command.equals("tasks")){
             showAllTasks(this.file);
@@ -42,7 +42,7 @@ public class ManagerCommands {
             showCommands();
         }
         else{
-            System.out.println("Введена некорректная команда, повторите ввод");
+            System.out.println(command +" unknown, please try again");
             Scanner scan = new Scanner(System.in);
             String newCommand = scan.nextLine();
             this.command = newCommand;
@@ -53,23 +53,23 @@ public class ManagerCommands {
 
         FileWriter writer = new FileWriter(file, true);
         Task task = new Task();
-        System.out.println("Введите имя таска");
+        System.out.println("Please enter the task name");
         Scanner scanner = new Scanner(System.in);
         String newTaskName = scanner.nextLine();
         task.setName(newTaskName);
         writer.write(task.getName() + "\n");
-        System.out.println("Введите содержание таска");
+        System.out.println("Please enter the task description");
         String newTaskDescription = scanner.nextLine();
         task.setDescription(newTaskDescription);
         writer.write(task.getDescription() + "\n");
-        System.out.println("Таск " + newTaskName + "сохранен");
+        System.out.println("Task " + newTaskName + " is saved");
         writer.close();
     }
     //
     public void editTask(File file) throws IOException {
         Scanner scanFile = new Scanner(file);
         Scanner scanInput = new Scanner(System.in);
-        System.out.println("Введите имя редактируемого таска");
+        System.out.println("Please enter the task name you want to edit");
         String taskNameInput = scanInput.nextLine();
         Task task = new Task();
         String oldTaskDesc = task.taskSearch(file, taskNameInput);
@@ -78,7 +78,7 @@ public class ManagerCommands {
             task.putNewTaskDataInFile(file, taskNameInput, oldTaskDesc, task);
         }
         else{
-            System.out.println("Таск с введенным именем не найден");
+            System.out.println("Entered task not found, please try again");
         }
 
     }
@@ -89,10 +89,10 @@ public class ManagerCommands {
         String oldTaskDesc = task.taskSearch(file, taskNameInput);
         if(!oldTaskDesc.equals("null")) {
             task.deleteTaskFromFile(file, taskNameInput, oldTaskDesc);
-            System.out.println("Таск " + taskNameInput + " удален");
+            System.out.println("Task " + taskNameInput + " is deleted");
         }
         else{
-            System.out.println("Таск с введенным именем не найден");
+            System.out.println("Entered task not found, please try again");
         }
 
     }

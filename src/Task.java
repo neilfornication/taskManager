@@ -49,13 +49,13 @@ public class Task {
         String newTaskDesc;
 
         if(!oldTaskDesc.equals("null")){
-            System.out.println("Введите новое имя для таска " + taskNameInput);
+            System.out.println("Please enter a new task name for task " + taskNameInput);
             newTaskName = scanInput.nextLine();
             task.setName(newTaskName);
-            System.out.println("Введите содержание таска " + newTaskName);
+            System.out.println("Please enter a new task description for task " + newTaskName);
             newTaskDesc = scanInput.nextLine();
             task.setDescription(newTaskDesc);
-            System.out.println("Новый таск " + "\"" + newTaskName + "\" сохранен");
+            System.out.println("New task " + "\"" + newTaskName + "\" is saved");
         }
     }
 

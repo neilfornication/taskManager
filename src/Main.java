@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String command = "";
         while (!command.equals("exit")) {
-            System.out.println("Введите команду");
+            System.out.println("Enter the command");
             command = scanner.nextLine();
             commands.acts(command);
         }

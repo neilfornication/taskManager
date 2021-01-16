@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5243bc1-dabc-4d80-9faa-e61dba0c6225" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ManagerCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManagerCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +76,7 @@
       <workItem from="1610557231272" duration="2462000" />
       <workItem from="1610626731017" duration="745000" />
       <workItem from="1610653687238" duration="3596000" />
+      <workItem from="1610804720057" duration="375000" />
     </task>
     <task id="LOCAL-00001" summary="changed act method">
       <created>1610558926566</created>
